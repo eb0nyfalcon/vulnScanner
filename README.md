@@ -38,7 +38,7 @@ A powerful, local web vulnerability scanner built with Python and Streamlit that
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/vuln-scanner.git
+   git clone https://github.com/eb0nyfalcon/vulScanner.git
    cd vuln-scanner
    ```
 
