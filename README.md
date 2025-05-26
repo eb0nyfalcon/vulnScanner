@@ -1,126 +1,67 @@
-# 🛡️ Custom Web Vulnerability Scanner
+VULNSCANNER
 
-A powerful, local web vulnerability scanner built with Python and Streamlit that performs reconnaissance, vulnerability scanning, and generates detailed reports.
+Uncover vulnerabilities, secure your web applications today!
 
-## 🌟 Features
+last-commit repo-top-language repo-language-count
+Built with the tools and technologies:
 
-- 🔍 **Reconnaissance**
-  - WHOIS Lookup
-  - DNS Records Analysis
-  - HTTP Headers Inspection
-  - robots.txt Parser
+Markdown Streamlit Supabase Pytest Python
 
-- 🔒 **Vulnerability Scanning**
-  - SQL Injection Detection
-  - XSS (Cross-Site Scripting) Testing
-  - LFI/RFI (Local/Remote File Inclusion) Detection
-  - Directory Bruteforce
+Table of Contents
 
-- 📊 **Reporting**
-  - Detailed PDF Reports
-  - Severity Classifications
-  - Timestamp Tracking
-  - Result History
+Overview
+Getting Started
+Prerequisites
+Installation
+Usage
+Testing
+Overview
 
-- 🎯 **User Interface**
-  - Web-based Dashboard using Streamlit
-  - Real-time Scan Progress
-  - Interactive Result Display
+vulnScanner is a powerful web vulnerability scanner designed to help developers identify and mitigate security weaknesses in their applications efficiently.
 
-## 🛠️ Prerequisites
+Why vulnScanner?
 
-- Python 3.8+
-- pip (Python package manager)
-- Git
-- Docker (optional)
+This project serves as a comprehensive tool for security assessments, enabling developers to enhance their applications' defenses. The core features include:
 
-## ⚙️ Installation
+🔍 Comprehensive Scanning: Identify a wide range of vulnerabilities, including SQL injection and XSS.
+📊 Real-Time Dashboard: Monitor scan progress and interact with results through an intuitive web interface.
+📄 Detailed Reporting: Generate comprehensive PDF reports with severity breakdowns and visual aids for better understanding.
+🌐 Reconnaissance Capabilities: Perform WHOIS lookups and DNS analysis to gather critical information about your target.
+🛡️ User-Friendly Interface: Navigate effortlessly through the scanning process and results documentation.
+Getting Started
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/eb0nyfalcon/vulScanner.git
-   cd vuln-scanner
-   ```
+Prerequisites
 
-2. **Create a virtual environment**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # For MacOS/Linux
-   ```
+This project requires the following dependencies:
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+Programming Language: Python
+Package Manager: Pip
+Installation
 
-4. **Configure Supabase**
-   Create a `.env` file in the project root:
-   ```bash
-   SUPABASE_URL="https://dqknvxqmkxwnxeiluiki.supabase.co"
-   SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRxa252eHFta3h3bnhlaWx1aWtpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUyMDgwNTMsImV4cCI6MjA2MDc4NDA1M30.KzFPg_fWa0FRdyqub8s4FR0Xkn4C7lWgS1tHdVMSBgc"
-   ```
+Build vulnScanner from the source and intsall dependencies:
 
-## 🚀 Usage
+Clone the repository:
 
-1. **Start the application**
-   ```bash
-   streamlit run app.py
-   ```
+❯ git clone https://github.com/eb0nyfalcon/vulnScanner
+Navigate to the project directory:
 
-2. **Access the dashboard**
-   - Open your browser and navigate to `http://localhost:8501`
-   - Enter the target URL
-   - Select desired scan options
-   - Click "Start Scan"
+❯ cd vulnScanner
+Install the dependencies:
 
-## 📁 Project Structure
+Using pip:
 
-```
-vuln-scanner/
-├── app.py                    # Main Streamlit application
-├── scanner/                  # Core scanning modules
-│   ├── recon.py
-│   ├── sqli.py
-│   ├── lfi_rfi.py
-│   ├── xss.py
-│   └── dir_bruteforce.py
-├── reports/                  # Report generation
-├── database/                 # Database operations
-└── assets/                  # Resources
-```
+❯ pip install -r vulnScanner/requirements.txt
+Usage
 
-## 🐳 Docker Support
+Run the project with:
 
-```bash
-# Build the container
-docker build -t vuln-scanner .
+Using pip:
 
-# Run the container
-docker run -p 8501:8501 vuln-scanner
-```
+python {entrypoint}
+Testing
 
-## 📝 Dependencies
+Vulnscanner uses the {test_framework} test framework. Run the test suite with:
 
-```
-streamlit>=1.10.0
-requests>=2.28.0
-beautifulsoup4>=4.11.0
-python-whois>=0.8.0
-reportlab>=3.6.0
-supabase>=0.7.0
-python-dotenv>=0.20.0
-```
+Using pip:
 
-## ⚠️ Disclaimer
-
-This tool is intended for educational purposes and authorized security testing only. Always obtain proper authorization before scanning any web applications.
-
-## 👤 Author
-
-**Thanish P.**
-- Email: thanishp0208@gmail.com
-- LinkedIn: [Thanish P](https://linkedin.com/in/thanish-p)
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+pytest
